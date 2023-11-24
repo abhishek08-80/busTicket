@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+        <section class="login vh-100">
+            <div class="container-fluid h-custom">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                  <form class="box2" onsubmit="return validation()">   
+                    <h2 class="text-center">Login</h2>          
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="email">Email address</label>
+                      <input type="email" id="email" class="form-control form-control-lg"
+                        placeholder="Enter email address" />
+                      <p id="emailerror"></p>
+                    </div>
+          
+                    <!-- Password input -->
+                    <div class="form-outline mb-3">
+                      <label class="form-label" for="password">Password</label>
+                      <input type="password" id="password" class="form-control form-control-lg"
+                        placeholder="Enter password" />
+                      <p id="passworderror"></p>
+                    </div>
+          
+                    <div class="d-flex justify-content-between abc align-items-center">
+                  
+                    <div class="text-center  text-lg-start mt-4 pt-2">
+                      <!-- <a href="homePage.html" button type="button" class="btn btn-danger btn-lg aaaa"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button></a> -->
+                        <input type="submit" class="btn btn-success btn-lg aaaa"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;" value="Login">
+                      <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="signup.html"
+                          class="link-danger">Register</a></p>
+                    </div>
+          </div>
+                  </form>
+                </div>
+              </div>
+            
+            </div>
+            
+          </section>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+
+</body>
+
+</html>

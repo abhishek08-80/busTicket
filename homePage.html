@@ -7,6 +7,7 @@
     <title>Ticket Booking</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
 </head>
 
 <body class="home">
@@ -35,17 +36,13 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="innerbox">
-                                    <select class="form-select homeInput text-center"
+                                    <select class="form-select homeInput text-center" id="from"
                                         aria-label="Default select example">
                                         <option selected>From</option>
                                         <option value="1">Chandigarh</option>
                                         <option value="2">Delhi</option>
                                         <option value="3">Ambala</option>
                                         <option value="4">Shimla</option>
-                                        <option value="5">Manali</option>
-                                        <option value="6">Amritsar</option>
-                                        <option value="7">Ludhiana</option>
-                                        <option value="8">Jalandhar</option>
                                     </select>
                                 </div>
                             </div>
@@ -53,17 +50,13 @@
                         <div class="row">
                             <div class="col-lg-4 offset-sm-4">
                                 <div class="innerbox">
-                                    <select class="form-select homeInput text-center"
+                                    <select class="form-select homeInput text-center" id="destination"
                                         aria-label="Default select example">
                                         <option selected>Destination</option>
                                         <option value="1">Delhi</option>
                                         <option value="2">Shimla</option>
-                                        <option value="3">Chandiharh</option>
+                                        <option value="3">Chandigarh</option>
                                         <option value="4">Ambala</option>
-                                        <option value="5">Manali</option>
-                                        <option value="6">Ludhiana</option>
-                                        <option value="7">Jalandhar</option>
-                                        <option value="8">Amritsar</option>
                                     </select>
                                 </div>
                             </div>
@@ -77,13 +70,26 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-4 offset-sm-4">
-                                <input type="button" value="Search Buses" class="homeSearch btn btn-success">
+                                <a href="busLayout.html">
+                                <input type="button" onclick="busList" value="Search Buses" class="homeSearch btn btn-success"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="list">
+                    <div class="mb-3">
+                        <div class="mb-3" id="busList"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -100,9 +106,24 @@
             </p>
         </div>
     </div>
+</section>
+    
+    
+    <section class="footer">
+        <div class="row">
+            <div class="col-sm-8">
+                <h4>Abhibus All Rights Reserved 2023© || </h4>
+                <h3>An initiative by Ditstek Team</h3>
+            </div>
+            <div class="col-sm-3 footerSocial">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
     </section>
-
-
+    <script src="./assets/js/homepage.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 

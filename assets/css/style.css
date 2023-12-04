@@ -22,6 +22,7 @@
     text-align: center;
     align-items: center;
     line-height: 60px;
+    padding-right: 20px;
 }
 
 .navbarMenu a {
@@ -62,55 +63,78 @@
     background-repeat: no-repeat;
     height: calc(100vh-80px);
 }
-.homeMainText h2{
+
+.homeMainText h2 {
     font-size: 74px;
     color: rgb(152, 1, 1);
 }
-.homeMainText p{
+
+.homeMainText p {
     font-size: 40px;
     color: rgb(110, 3, 3);
 }
 
-.homeInput{
+.homeInput {
     border-radius: 66px 66px !important;
     background-color: rgba(77, 77, 77, 0.42) !important;
     color: #eee !important;
     border: 2px solid rgb(77, 1, 1) !important;
 }
-.homeInput:hover{
+
+.homeInput:hover {
     background-color: rgb(231, 231, 231) !important;
     color: black !important;
     font-weight: 900;
 }
-#calender{
+
+#calender {
     padding: 5px 65px;
     border-radius: 20px;
     border: none;
     background-color: rgba(77, 77, 77, 0.42);
-    color: #eee ;
+    color: #eee;
     border: 2px solid rgb(77, 1, 1);
 }
-#calender:hover{
+
+#calender:hover {
     background-color: rgb(231, 231, 231) !important;
     color: black;
     font-weight: 900;
 }
+
 .homeSearch {
     padding: 4px 100px !important;
     border-radius: 12px !important;
     margin-top: 64px;
     margin-bottom: 125px;
 }
-.homeSearch:hover{
+
+.homeSearch:hover {
     background-color: #eee;
     color: darkgreen;
     font-weight: 900;
 }
-.benifits{
+
+.benifits {
     color: #eee;
     backdrop-filter: blur(10px);
     padding: 40px 50px;
-    border: 3px solid grey;
+    border: 5px solid grey;
+    border-radius: 20px;
+}
+.footer{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: grey;
+    padding-left: 30px;
+    color: rgb(110, 3, 3);
+    margin-top: 30px;
+}
+.footerSocial{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* login page and signup page*/
 
@@ -131,14 +155,6 @@
         height: 100%;
     }
 }
-
-.signup {
-    background-image: url("../image/wall2.png");
-    background-position: center;
-    height: 100%;
-    background-repeat: no-repeat;
-}
-
 .signup label {
     font-size: 20px;
     font-weight: 600;
@@ -146,7 +162,7 @@
 }
 
 .signup form h2 {
-    font-size: 38px;
+    font-size: 30px;
     color: red;
     font-weight: 900;
 }
@@ -176,15 +192,18 @@
     color: red;
     font-weight: 900;
 }
+
 .login form p {
     font-size: 20px;
     color: #eee;
 }
+
 .abc {
     display: flex !important;
     align-items: center;
     justify-content: center !important;
 }
+
 .aaaa {
     margin: auto;
     text-align: center;
@@ -192,11 +211,13 @@
     align-items: center;
     justify-content: center;
 }
+
 .aaaaa {
-    margin: 0px 100px;
+    margin: 0px 75%;
     margin-top: -75px;
     text-align: center;
 }
+
 .box2 {
     padding: 0px 20px;
     border-radius: 40px;
@@ -204,6 +225,87 @@
     border: 2px solid red;
 }
 
-#emailerror, #passworderror, #usererror , #confirmpassworderror {
+#emailerror,
+#passworderror,
+#usererror,
+#confirmpassworderror {
     color: red;
+}
+
+/* busLayout */
+
+body {
+    padding: 15px;
+    background-image: url("../image/wall2.png");
+}
+
+.bus.seat2-2{
+    border: 3px solid red !important;
+    backdrop-filter: blur(15px) ;
+    padding: 30px 30px !important;
+    border-radius: 20px;
+}
+.bus.seat2-2 .busSeats .seat:nth-child(2) {
+    margin-right: 14.28571428571429%;
+}
+
+.bus.seat2-3 .busSeats .seat:nth-child(3) {
+    margin-right: 14.28571428571429%;
+}
+
+/* busLayout */
+.busSeats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.busSeats .seat {
+    display: flex;
+    flex: 0 0 14.28571428571429%;
+    padding: 3px;
+    position: relative;
+}
+
+.busSeats .seat label {
+    border-radius: 4px;
+    background: #3783b5;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0.1rem;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+.busSeats .seat input[type="checkbox"] {
+    display: none !important;
+}
+
+.busSeats .seat input[type="checkbox"]+label {
+    border-radius: 13px;
+    background: #3783b5;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px;
+    color: #fff;
+}
+
+.busSeats .seat input[type="checkbox"]:checked+label {
+    background: #46be8a;
+}
+
+.busSeats .seat input[type="checkbox"]:disabled+label {
+    cursor: not-allowed;
+    /* background: #f73737; */
+}
+.busLayout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
